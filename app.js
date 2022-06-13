@@ -16,4 +16,6 @@ app.use(express.static(publicPath));
      })
     
 
-    app.listen(3001,()=>{console.log("servidor 3001")});
+    app.listen(process.env.PORT||3000,function(){
+        console.log("servidor 3001")
+    });
